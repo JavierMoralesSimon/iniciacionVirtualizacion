@@ -13,68 +13,60 @@ Captura de pantalla del escritorio una vez terminado el proceso:
 
 # Pasos seguidos para instalar Docker Desktop
 1. Actualizar los repositorios mediante el comando: `sudo apt update && sudo apt upgrade -y`
-    ![Actualizar los repositorios](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/2.png)
+   ![Actualizar los repositorios](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/2.png)
 2. Instalar dependencias mediante el comando: `sudo apt install ca-certificates curl gnupg -y`
-![Instalar dependencias](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/3.png)
+   ![Instalar dependencias](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/3.png)
 3. Añadir el repositorio oficial de Docker:
 
-   **3.1.** Primero, descargar y añadir la clave GPG de Docker:
-   
-   - Comando: `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg`
+   **3.1.** Primero, descargar y añadir la clave GPG de Docker mediante el comando: `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg`
 
-   **3.2.** Segundo, añadir el repositorio de Docker a las fuentes de APT para la versión correcta de Ubuntu:
-   
-   - Comando: `echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null`
-![Añadir el repositorio oficial de Docker](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/4.png)
-4. Actualizar el índice de paquetes para que el sistema reconozca el nuevo repositorio de Docker:
-    * Comando: `sudo apt update`
-      ![Actualizar el índice de paquetes para que el sistema reconozca el nuevo repositorio de Docker](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/5.png)
-5. Actualizar el índice de paquetes para que el sistema reconozca el nuevo repositorio de Docker:
-    * Comando: `sudo apt update`
-    * Captura de pantalla: ![Actualizar el índice de paquetes para que el sistema reconozca el nuevo repositorio de Docker](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/5.png)
-6. Instalar Docker Engine, que es necesario para Docker Desktop:
-    * Comando: `sudo apt install docker-ce docker-ce-cli containerd.io -y`
-    * Captura de pantalla: ![Instalar Docker Engine](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/6.png)
+   **3.2.** Segundo, añadir el repositorio de Docker a las fuentes de APT para la versión correcta de Ubuntu mediante el comando: `echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null`
+   ![Añadir el repositorio oficial de Docker](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/4.png)
+4. Actualizar el índice de paquetes para que el sistema reconozca el nuevo repositorio de Docker mediante el comando: `sudo apt update`
+   ![Actualizar el índice de paquetes para que el sistema reconozca el nuevo repositorio de Docker](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/5.png)
+5. Actualizar el índice de paquetes para que el sistema reconozca el nuevo repositorio de Docker mediante el comando: `sudo apt update`
+   ![Actualizar el índice de paquetes para que el sistema reconozca el nuevo repositorio de Docker](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/5.png)
+6. Instalar Docker Engine, que es necesario para Docker Desktop mediante el comando: `sudo apt install docker-ce docker-ce-cli containerd.io -y`
+   ![Instalar Docker Engine](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/6.png)
 7. Descargar e instalar el paquete .deb de Docker Desktop:
-   **6.1.** Primero asegurarse de tener "Snap" instalado y si no, hacerlo. Es la forma recomendada para instalar Docker Desktop en distribuciones Linux modernas:
-        - Comando: `sudo apt install snapd -y`  
-        - Captura de pantalla: ![Ver si Snap está instalado](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/7.png)
-   **6.2.** Segundo, instalar Docker Desktop usando Snap:
-        - Comando: `sudo snap install docker --classic`
-        - Captura de pantalla: ![Instalar Docker Desktop usando Snap](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/8.png)
+
+   **7.1.** Primero asegurarse de tener "Snap" instalado y si no, hacerlo. Es la forma recomendada para instalar Docker Desktop en distribuciones Linux modernas mediante el comando: `sudo apt install snapd -y`  
+      ![Ver si Snap está instalado](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/7.png)
+
+   **7.2.** Segundo, instalar Docker Desktop usando Snap mediante el comando: `sudo snap install docker --classic`
+      ![Instalar Docker Desktop usando Snap](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/8.png)
 8. Verificar que funciona correctamente:
-    **7.1.** Comprobación de la instalación:
-        - Comando: `docker --version`  
-        - Captura de pantalla: ![Verificar funcionamiento](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/9.png)
-   **7.2.** Prueba de uso:
-        - Comando: `sudo docker run hello-world`
-        - Captura de pantalla: ![Prueba de uso](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/10.png)
+
+   **8.1.** Comprobación de la instalación mediante el comando: `docker --version`  
+      ![Verificar funcionamiento](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/9.png)
+
+   **8.2.** Prueba de uso mediante el comando: `sudo docker run hello-world`
+      ![Prueba de uso](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/10.png)
 
 # Comandos usados para crear y ejecutar los contenedores
 1. Buscar imágenes disponibles:
-   **1.1.** Nginx:
-        - Comando: `sudo docker search nginx`  
-        - Captura de pantalla: ![Buscar imagen de Nginx](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/11.png)
-   **1.2.** Tomcat:
-        - Comando: `sudo docker search tomcat`
-        - Captura de pantalla: ![Buscar imagen de Tomcat](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/12.png)
-2. Descargar e iniciar contenedores:
-   **2.1.** Nginx:
-        - Comando: `sudo docker run -d -p 8080:80 --name webserver nginx`  
-        - Captura de pantalla: ![Descargar e iniciar Nginx](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/13.png)
-   **2.2.** Tomcat:
-        - Comando: `sudo docker run -d -p 8081:8080 --name appserver tomcat`
-        - Captura de pantalla: ![Descargar e iniciar Tomcat](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/14.png)
-3. Verificar contenedores activos:
-    * Comando: `sudo docker ps`
-    * Captura de pantalla: ![Verificar contenedores activos](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/15.png)
-4. Abrir en el navegador:
-   **4.1.** Nginx:
-        - Url: `http://localhost:8080`  
-        - Captura de pantalla: ![Abrir Nginx en el navegador](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/16.png)
-   **4.2.** Tomcat:
-        - Url: `http://localhost:8081`
-        - Captura de pantalla: ![Abrir Tomcat en el navegador](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/17.png)
+
+   **1.1.** Nginx (Comando: `sudo docker search nginx`)  
+      ![Buscar imagen de Nginx](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/11.png)
+
+   **1.2.** Tomcat (Comando: `sudo docker search tomcat`)
+      ![Buscar imagen de Tomcat](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/12.png)
+3. Descargar e iniciar contenedores:
+
+   **2.1.** Nginx (Comando: `sudo docker run -d -p 8080:80 --name webserver nginx`)
+      ![Descargar e iniciar Nginx](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/13.png)
+
+   **2.2.** Tomcat (Comando: `sudo docker run -d -p 8081:8080 --name appserver tomcat`)
+      ![Descargar e iniciar Tomcat](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/14.png)
+5. Verificar contenedores activos mediante el comando: `sudo docker ps`
+   ![Verificar contenedores activos](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/15.png)
+6. Abrir en el navegador:
+
+   **4.1.** Nginx (Url: `http://localhost:8080`)  
+      ![Abrir Nginx en el navegador](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/16.png)
+
+   **4.2.** Tomcat (Url: `http://localhost:8081`)
+      ![Abrir Tomcat en el navegador](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/17.png)
 
 # Descripción de los requerimientos mínimos para implantar una aplicación web:
 * ### Requisitos de hardware y software:
@@ -113,6 +105,7 @@ Captura de pantalla del escritorio una vez terminado el proceso:
     * Pruebas de vulnerabilidad y auditorías de seguridad.
 
     * Planes de contingencia ante fallos o ataques.
+
 
 
 
