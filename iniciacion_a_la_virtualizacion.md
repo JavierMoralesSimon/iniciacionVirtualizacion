@@ -22,12 +22,12 @@ Captura de pantalla del escritorio una vez terminado el proceso:
 
    **3.1.** Primero, descargar y añadir la clave GPG de Docker:
    
-        - Comando: `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg`  
+   - Comando: `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg`
    **3.2.** Segundo, añadir el repositorio de Docker a las fuentes de APT para la versión correcta de Ubuntu:
    
-        - Comando: `echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null`
+   - Comando: `echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null`
    
-**Captura de pantalla:** ![Añadir el repositorio oficial de Docker](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/4.png)
+![Añadir el repositorio oficial de Docker](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/4.png)
 5. Actualizar el índice de paquetes para que el sistema reconozca el nuevo repositorio de Docker:
     * Comando: `sudo apt update`
     * Captura de pantalla: ![Actualizar el índice de paquetes para que el sistema reconozca el nuevo repositorio de Docker](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/5.png)
@@ -112,3 +112,4 @@ Captura de pantalla del escritorio una vez terminado el proceso:
     * Pruebas de vulnerabilidad y auditorías de seguridad.
 
     * Planes de contingencia ante fallos o ataques.
+
