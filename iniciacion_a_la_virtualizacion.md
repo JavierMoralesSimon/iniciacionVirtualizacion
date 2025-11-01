@@ -24,23 +24,21 @@ Captura de pantalla del escritorio una vez terminado el proceso:
    ![Añadir el repositorio oficial de Docker](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/4.png)
 4. Actualizar el índice de paquetes para que el sistema reconozca el nuevo repositorio de Docker mediante el comando: `sudo apt update`
    ![Actualizar el índice de paquetes para que el sistema reconozca el nuevo repositorio de Docker](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/5.png)
-5. Actualizar el índice de paquetes para que el sistema reconozca el nuevo repositorio de Docker mediante el comando: `sudo apt update`
-   ![Actualizar el índice de paquetes para que el sistema reconozca el nuevo repositorio de Docker](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/5.png)
-6. Instalar Docker Engine, que es necesario para Docker Desktop mediante el comando: `sudo apt install docker-ce docker-ce-cli containerd.io -y`
+5. Instalar Docker Engine, que es necesario para Docker Desktop mediante el comando: `sudo apt install docker-ce docker-ce-cli containerd.io -y`
    ![Instalar Docker Engine](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/6.png)
-7. Descargar e instalar el paquete .deb de Docker Desktop:
+6. Descargar e instalar el paquete .deb de Docker Desktop:
 
-   **7.1.** Primero asegurarse de tener "Snap" instalado y si no, hacerlo. Es la forma recomendada para instalar Docker Desktop en distribuciones Linux modernas mediante el comando: `sudo apt install snapd -y`  
+   **6.1.** Primero asegurarse de tener "Snap" instalado y si no, hacerlo. Es la forma recomendada para instalar Docker Desktop en distribuciones Linux modernas mediante el comando: `sudo apt install snapd -y`  
       ![Ver si Snap está instalado](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/7.png)
 
-   **7.2.** Segundo, instalar Docker Desktop usando Snap mediante el comando: `sudo snap install docker --classic`
+   **6.2.** Segundo, instalar Docker Desktop usando Snap mediante el comando: `sudo snap install docker --classic`
       ![Instalar Docker Desktop usando Snap](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/8.png)
-8. Verificar que funciona correctamente:
+7. Verificar que funciona correctamente:
 
-   **8.1.** Comprobación de la instalación mediante el comando: `docker --version`  
+   **7.1.** Comprobación de la instalación mediante el comando: `docker --version`  
       ![Verificar funcionamiento](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/9.png)
 
-   **8.2.** Prueba de uso mediante el comando: `sudo docker run hello-world`
+   **7.2.** Prueba de uso mediante el comando: `sudo docker run hello-world`
       ![Prueba de uso](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/10.png)
 
 # Comandos usados para crear y ejecutar los contenedores
@@ -105,6 +103,7 @@ Captura de pantalla del escritorio una vez terminado el proceso:
     * Pruebas de vulnerabilidad y auditorías de seguridad.
 
     * Planes de contingencia ante fallos o ataques.
+
 
 
 
