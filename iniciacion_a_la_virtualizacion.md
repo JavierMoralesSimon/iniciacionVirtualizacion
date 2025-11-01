@@ -14,9 +14,8 @@ Captura de pantalla del escritorio una vez terminado el proceso:
 # Pasos seguidos para instalar Docker Desktop
 1. Actualizar los repositorios mediante el comando: `sudo apt update && sudo apt upgrade -y`
     ![Actualizar los repositorios](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/2.png)
-2. Instalar dependencias:
-    * Comando: `sudo apt install ca-certificates curl gnupg -y`
-    * Captura de pantalla: ![Instalar dependencias](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/3.png)
+2. Instalar dependencias mediante el comando: `sudo apt install ca-certificates curl gnupg -y`
+![Instalar dependencias](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/3.png)
 3. Añadir el repositorio oficial de Docker:
 
    **3.1.** Primero, descargar y añadir la clave GPG de Docker:
@@ -114,6 +113,7 @@ Captura de pantalla del escritorio una vez terminado el proceso:
     * Pruebas de vulnerabilidad y auditorías de seguridad.
 
     * Planes de contingencia ante fallos o ataques.
+
 
 
 
