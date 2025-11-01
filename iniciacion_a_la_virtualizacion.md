@@ -19,25 +19,29 @@ Captura de pantalla del escritorio una vez terminado el proceso:
     * Comando: `sudo apt install ca-certificates curl gnupg -y`
     * Captura de pantalla: ![Instalar dependencias](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/3.png)
 3. Añadir el repositorio oficial de Docker:
+
    **3.1.** Primero, descargar y añadir la clave GPG de Docker:
+   
         - Comando: `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg`  
    **3.2.** Segundo, añadir el repositorio de Docker a las fuentes de APT para la versión correcta de Ubuntu:
+   
         - Comando: `echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null`
+   
 **Captura de pantalla:** ![Añadir el repositorio oficial de Docker](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/4.png)
-4. Actualizar el índice de paquetes para que el sistema reconozca el nuevo repositorio de Docker:
+5. Actualizar el índice de paquetes para que el sistema reconozca el nuevo repositorio de Docker:
     * Comando: `sudo apt update`
     * Captura de pantalla: ![Actualizar el índice de paquetes para que el sistema reconozca el nuevo repositorio de Docker](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/5.png)
-5. Instalar Docker Engine, que es necesario para Docker Desktop:
+6. Instalar Docker Engine, que es necesario para Docker Desktop:
     * Comando: `sudo apt install docker-ce docker-ce-cli containerd.io -y`
     * Captura de pantalla: ![Instalar Docker Engine](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/6.png)
-6. Descargar e instalar el paquete .deb de Docker Desktop:
+7. Descargar e instalar el paquete .deb de Docker Desktop:
    **6.1.** Primero asegurarse de tener "Snap" instalado y si no, hacerlo. Es la forma recomendada para instalar Docker Desktop en distribuciones Linux modernas:
         - Comando: `sudo apt install snapd -y`  
         - Captura de pantalla: ![Ver si Snap está instalado](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/7.png)
    **6.2.** Segundo, instalar Docker Desktop usando Snap:
         - Comando: `sudo snap install docker --classic`
         - Captura de pantalla: ![Instalar Docker Desktop usando Snap](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/8.png)
-7. Verificar que funciona correctamente:
+8. Verificar que funciona correctamente:
     **7.1.** Comprobación de la instalación:
         - Comando: `docker --version`  
         - Captura de pantalla: ![Verificar funcionamiento](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/9.png)
@@ -106,4 +110,5 @@ Captura de pantalla del escritorio una vez terminado el proceso:
     * Monitorización continua.
     * Políticas de contraseñas seguras y cifrado de datos sensibles.
     * Pruebas de vulnerabilidad y auditorías de seguridad.
+
     * Planes de contingencia ante fallos o ataques.
