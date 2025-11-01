@@ -102,12 +102,3 @@ Captura de pantalla del escritorio una vez terminado el proceso:
     * Políticas de contraseñas seguras y cifrado de datos sensibles.
     * Pruebas de vulnerabilidad y auditorías de seguridad.
     * Planes de contingencia ante fallos o ataques.
-
-
-
-
-
-
-
-
-
