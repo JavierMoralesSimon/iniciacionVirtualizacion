@@ -12,9 +12,8 @@ Captura de pantalla del escritorio una vez terminado el proceso:
 ![Escritorio de Ubuntu 24.04 LTS](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/1.png)
 
 # Pasos seguidos para instalar Docker Desktop
-1. Actualizar los repositorios:
-    * Comando: `sudo apt update && sudo apt upgrade -y`
-    * Captura de pantalla: ![Actualizar los repositorios](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/2.png)
+1. Actualizar los repositorios mediante el comando: `sudo apt update && sudo apt upgrade -y`
+    ![Actualizar los repositorios](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/2.png)
 2. Instalar dependencias:
     * Comando: `sudo apt install ca-certificates curl gnupg -y`
     * Captura de pantalla: ![Instalar dependencias](https://github.com/JavierMoralesSimon/iniciacionVirtualizacion/blob/main/Capturas/3.png)
@@ -115,6 +114,7 @@ Captura de pantalla del escritorio una vez terminado el proceso:
     * Pruebas de vulnerabilidad y auditorías de seguridad.
 
     * Planes de contingencia ante fallos o ataques.
+
 
 
 
